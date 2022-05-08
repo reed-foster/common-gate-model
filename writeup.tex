@@ -340,6 +340,10 @@ This is because the load is effectively in a common gate configuration, and thus
 If the load transistor were diode connected with the gate and source shorted together, then its input impedance would be $r_{o2}$, and the DC gain would likely be closer to the maximum gain allowed by the transistor intrinsic gain $g_{m1}(r_{o1}||r_{o2})$.
 Based on the intrinsic gain $g_{mi}r_{oi}$ in Fig. \ref{fig:intrinsic_gain}, this could be as high as 10, or even 20 for a similar level of bias current.
 
+\section{Supplemental Information and Model Code}
+
+Measured IV curves and Matlab code for the small signal model can be found at \url{https://github.com/reed-foster/common-gate-model}.
+
 \section*{Acknowledgment}
 
 The author would like to thank Alon Vardy, for his help with fabrication and testing as well as many useful discussions. The author would also like to thank Karl Berggren, for lending equipment for measurement.
@@ -359,7 +363,7 @@ The author would like to thank Alon Vardy, for his help with fabrication and tes
     %\bibitem{Park} J. S. Park, J. K. Jeong, Y. G. Mo, H. D. Kim, ``Improvements in the device characteristics of amorphous indium gallium zinc oxide thin-film transistors by Ar plasma treatment," Appl. Phys. Lett., vol. 90, 262106 (2007)
     %\bibitem{Muzenrieder} N. M{\"u}zenrieder, et. al., ``Flexible InGaZnO TFTs with fmax Above 300 MHz," Electron Device Letters, vol. 39, pp. 1310-1313, (2018)
     \bibitem{Tektronix} Tektronix, Appl. Note ``Making Stable Low Current Measurements with High Test Connection Capacitance Using the 4201-SMU and 4211-SMU" pp. 2-3
-
 \end{thebibliography}
+
 
 \end{document}

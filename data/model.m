@@ -44,6 +44,8 @@ Rco = Rc/(10*70);
 [gm1, ro1, gmi1, roi1, id1, vds1, vgs1] = get_transistor_props('0502_DC_IV/80_5_IV.csv', linspace(0,10,51), 71, Rd1, Rs1);
 [gm2, ro2, gmi2, roi2, id2, vds2, vgs2] = get_transistor_props('0502_DC_IV/30_5_IV.csv', linspace(0,10,51), 111, Rd2, Rs2);
 % find small signal params at each bias point
+% 1:5 are day 2 measurements (see bottom half of day2_measurements.m)
+% 6:10 are day 4 measurements (see day4_cg_measurements.m)
 vgs1_bias = [-8 -7 -6 -5 -4 -6 -6 -6 -6 -6];
 vds1_bias = [0.8 0.758 0.716 0.68 0.66 4.56 5.389 5.869 6.511 6.960];
 vgs2_bias = [-4.8 -3.758 -2.716 -1.68 -0.66 1.44 2.511 4.131 5.489 7.04];
@@ -79,7 +81,7 @@ Cch2 = 2/3*30e-6*9e-6*kAlOx*eps0/tAlOx;
 Cpad = (100e-6*150e-6+25e-6*240e-6)*eps0*(kSiO2*kAlOx/(kAlOx*tSiO2+kSiO2*tAlOx));
 
 colors = {'r','g','b','c','m'};
-for i=6:10
+for i=6:10 % only plot day 4 measurements
     gm1 = gm1_list(i);
     gm2 = gm2_list(i);
     ro1 = ro1_list(i);
@@ -143,8 +145,7 @@ for i=6:10
         av_den = Rs1 + Rco*Rs1*Ypad+ZL+Rco*(ZL.*Ypad)+Rs1*ZL.*(sCch1+Ypad+Rco*(sCch1.*Ypad)+Ysub_d1+Ysub_s1+Rco*Ypad.*(Ysub_d1+Ysub_s1));
         av_den = av_den + ro1*(1+Rs1*(gm1+sCch1+Ysub_s1)).*(1+Rco*Ypad+ZL.*(Ypad+Ysub_d1+Rco*Ysub_d1.*Ypad));
         av_den = av_den + Rd1*(1+Ypad.*(Rco+ZL)).*(1+ro1*Ysub_d1+Rs1*(sCch1+Ysub_d1+ro1*(sCch1.*Ysub_d1)+Ysub_s1+ro1*Ysub_d1.*(gm1+Ysub_s1)));
-        %av_den = ((Rd1+ro1+Rs1+Rd1*Rs1*sCch1+ro1*Rs1*(gm1+sCch1)).*(1+Rco*sCpad)+ZL.*(1+Rs1*sCch1+(Rco+Rd1+ro1+Rs1+gm1*ro1*Rs1+(Rco+Rd1+ro1)*Rs1*sCch1).*sCpad));
-        av = av_num./av_den;%(gm1*ro1+1).*ZL./(R1+ZL+ro1*(1+gm1*R1)+sCch1*R1.*(ro1+ZL));
+        av = av_num./av_den;
     
         subplot(2,1,1);
         loglog(freq, abs(av), 'Color', colors{mod(i-1,5)+1}, 'Linewidth', 1);

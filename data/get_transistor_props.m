@@ -1,5 +1,4 @@
 function [gm, ro, gmi, roi, id, vds, vgs] = get_transistor_props(fname, Vds_data, vgsCount, Rd, Rs)
-    %Vds_data = linspace(0, 10, 51); % Vd: 0V 10V, 200mV increments
     Vgs_data = readmatrix(fname,'Range',strcat('A2:A',num2str(vgsCount+1)))';
     Id_data = readmatrix(fname,'Range',strcat('C2:C',num2str(vgsCount*51+1)));
     Id_data = reshape(Id_data,[length(Vgs_data),length(Vds_data)]);
