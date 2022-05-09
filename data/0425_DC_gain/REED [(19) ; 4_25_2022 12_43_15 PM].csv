@@ -1,0 +1,1357 @@
+﻿
+SetupTitle, REED
+PrimitiveTest, I/V Sweep
+TestParameter, Context.MainFrame, B1500A
+TestParameter, Channel.UnitType, SMU, SMU, SMU, SMU, SMU
+TestParameter, Channel.Unit, SMU4:HR, SMU2:HR, SMU1:HP, SMU3:HR, SMU5:MP
+TestParameter, Channel.IName, IDD, IGND, IB1, IOUT, IB2
+TestParameter, Channel.VName, VDD, VIN, VB1, VOUT, VB2
+TestParameter, Channel.Mode, V, V, V, I, V
+TestParameter, Channel.Func, CONST, VAR1, CONST, CONST, CONST
+TestParameter, Channel.Index, 
+TestParameter, Channel.Time, 
+TestParameter, Measurement.Port.Unit, SMU4:HR, SMU2:HR, SMU1:HP, SMU3:HR, SMU5:MP
+TestParameter, Measurement.Port.SeriesResistor, NONE, NONE, NONE, NONE, NONE
+TestParameter, Measurement.Port.Filter, ON, ON, ON, ON, ON
+TestParameter, Measurement.Port.OutputVoltageComparison, 0, 0, 0, 0, 0
+TestParameter, Measurement.Primary.Locus, Single
+TestParameter, Measurement.Primary.Scale, LINEAR
+TestParameter, Measurement.Primary.Start, -10
+TestParameter, Measurement.Primary.Stop, 2
+TestParameter, Measurement.Primary.Step, 0.06
+TestParameter, Measurement.Primary.Compliance, 0.1
+TestParameter, Measurement.Primary.PowerCompliance, 0
+TestParameter, Measurement.Aborting.Condition, CONTINUE AT ANY
+TestParameter, Measurement.PostOutput.Value, START
+TestParameter, Measurement.PostOutput.Retention, OFF
+TestParameter, Measurement.Bias.Source, 8, -10, -12, 0, 8
+TestParameter, Measurement.Bias.Compliance, 0.01, 0.1, 0.1, 0.1, 0.1
+TestParameter, Measurement.Monitor.Unit, SMU4:HR, SMU2:HR, SMU1:HP, SMU3:HR, SMU5:MP
+TestParameter, Measurement.Monitor.Adc, HR ADC, HR ADC, HR ADC, HR ADC, HR ADC
+TestParameter, Measurement.Monitor.Measurement, Compliance Side, Compliance Side, Compliance Side, Compliance Side, Compliance Side
+TestParameter, Measurement.Monitor.RangingMode, LIMITED, LIMITED, LIMITED, LIMITED, LIMITED
+TestParameter, Measurement.Monitor.RangeBoundary, 1nA, 1nA, 1nA, 2V, 1nA
+TestParameter, Measurement.Monitor.RangeRating, BY FULL RANGE, BY FULL RANGE, BY FULL RANGE, BY FULL RANGE
+TestParameter, Measurement.Monitor.RangeRatingCoeff, 50, 50, 50, 50
+TestParameter, Measurement.Timing.Hold, 0
+TestParameter, Measurement.Timing.Delay, 0
+TestParameter, Measurement.Adc.HighSpeed.Mode, AUTO
+TestParameter, Measurement.Adc.HighSpeed.Coeff, 1
+TestParameter, Measurement.Adc.HighResolution.AutoZero, OFF
+TestParameter, Measurement.Adc.HighResolution.Mode, AUTO
+TestParameter, Measurement.Adc.HighResolution.Coeff, 6
+TestParameter, Measurement.WaitTime.Source.Coeff, 1
+TestParameter, Measurement.WaitTime.Source.Offset, 0
+TestParameter, Measurement.WaitTime.Monitor.Coeff, 1
+TestParameter, Measurement.WaitTime.Monitor.Offset, 0
+TestParameter, Function.User.Name, AV
+TestParameter, Function.User.Unit, 
+TestParameter, Function.User.Definition, diff(VOUT,VIN)
+TestParameter, Output.Graph.Enabled, true
+TestParameter, Output.Graph.AutoScaling, false
+TestParameter, Output.Graph.XAxis.Data, VIN
+TestParameter, Output.Graph.XAxis.Scale, Linear
+TestParameter, Output.Graph.XAxis.Left, -15
+TestParameter, Output.Graph.XAxis.Right, 0
+TestParameter, Output.Graph.XAxis.RunTimeAutoScale, true
+TestParameter, Output.Graph.YAxis.Data, VOUT, AV
+TestParameter, Output.Graph.YAxis.Scale, Linear, Linear
+TestParameter, Output.Graph.YAxis.Bottom, 0, 0
+TestParameter, Output.Graph.YAxis.Top, 12, 1
+TestParameter, Output.Graph.YAxis.Group, Group 1, 
+TestParameter, Output.Graph.YAxis.RunTimeAutoScale, true, true
+TestParameter, AutoAnalysis.Interpolation, false
+TestParameter, AutoAnalysis.Line1.Enabled, false
+TestParameter, AutoAnalysis.Line1.Type, 1
+TestParameter, AutoAnalysis.Line1.Fix, True
+TestParameter, AutoAnalysis.Line1.YAxis, 0
+TestParameter, AutoAnalysis.Line1.Point1.Type, 0
+TestParameter, AutoAnalysis.Line1.Point1.XY.X, 
+TestParameter, AutoAnalysis.Line1.Point1.XY.Y, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.Var, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.Condition, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.Start, false
+TestParameter, AutoAnalysis.Line1.Point1.Data.StartVar, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line1.Point2.Type, 0
+TestParameter, AutoAnalysis.Line1.Point2.XY.X, 
+TestParameter, AutoAnalysis.Line1.Point2.XY.Y, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.Var, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.Condition, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.Start, false
+TestParameter, AutoAnalysis.Line1.Point2.Data.StartVar, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line1.GradientExpr, 0
+TestParameter, AutoAnalysis.Line2.Enabled, false
+TestParameter, AutoAnalysis.Line2.Type, 1
+TestParameter, AutoAnalysis.Line2.Fix, True
+TestParameter, AutoAnalysis.Line2.YAxis, 0
+TestParameter, AutoAnalysis.Line2.Point1.Type, 0
+TestParameter, AutoAnalysis.Line2.Point1.XY.X, 
+TestParameter, AutoAnalysis.Line2.Point1.XY.Y, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.Var, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.Condition, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.Start, false
+TestParameter, AutoAnalysis.Line2.Point1.Data.StartVar, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line2.Point2.Type, 0
+TestParameter, AutoAnalysis.Line2.Point2.XY.X, 
+TestParameter, AutoAnalysis.Line2.Point2.XY.Y, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.Var, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.Condition, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.Start, false
+TestParameter, AutoAnalysis.Line2.Point2.Data.StartVar, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line2.GradientExpr, 0
+TestParameter, AutoAnalysis.Marker.Enabled, false
+TestParameter, AutoAnalysis.Marker.Data.Var, 
+TestParameter, AutoAnalysis.Marker.Data.Condition, 
+TestParameter, AutoAnalysis.Marker.Data.Start, false
+TestParameter, AutoAnalysis.Marker.Data.StartVar, 
+TestParameter, AutoAnalysis.Marker.Data.StartCondition, 
+MetaData, TestRecord.EntryPoint, true
+MetaData, TestRecord.RecordTime, 04/25/2022 12:43:15
+MetaData, TestRecord.TestTarget, 
+MetaData, TestRecord.IterationIndex, 19
+MetaData, TestRecord.Preservation, true
+MetaData, TestRecord.Flag, 
+MetaData, TestRecord.Remarks, 
+MetaData, TestRecord.LinkKey, d8402249-8766-4171-a69e-e24deeb11d9d
+AnalysisSetup, Analysis.Setup.Vector.Graph.Enabled, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.ActiveYAxis, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.LeftYAxis, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.RightYAxis, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Name, VIN
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.GroupName, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.RunTimeAutoScale, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Unit, V
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Scale, Linear
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Left, -10
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Right, 2
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Name, VOUT, AV
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.GroupName, Group 1, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.RunTimeAutoScale, true, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Unit, V, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Scale, Linear, Linear
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Bottom, -6.2, -0.0067
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Top, 8, 2.1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Interpolation, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Index, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Step, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.Active, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Fix, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Type, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.YAxisIndex, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.LastIndex, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.LastStep, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Gradient, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Fix, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Type, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.YAxisIndex, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.LastIndex, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.LastStep, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Gradient, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.BackgroundColor, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.TextColor, -16777216
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridColor, -3618616
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.LineColor, -65336
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Var2LabelColor, -11513776
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.ChangeToColor, -24416
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.LineStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Var2LabelStyle, Adjacent
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.PlotColor, -16777036
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.PlotColor, -39936
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.PlotColor, -16731136
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.PlotColor, -8892376
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.PlotColor, -65536
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.PlotColor, -14336
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.PlotColor, -6946586
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.PlotColor, -16733546
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.AxisTitle.FontName, Tahoma
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.AxisTitle.RelativeSize, Medium
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.AxisTitle.Size, 7
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.ScaleText.FontName, Tahoma
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.ScaleText.RelativeSize, Medium
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.ScaleText.Size, 7
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.Legend.FontName, Tahoma
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.Legend.RelativeSize, Medium
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.Legend.Size, 7
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Scale.LogTickedDecadeCount, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.LogoVisible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridVisible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.SetupSummaryVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.ChangeColorEnabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.MinorTicksValueVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.CursorFormat, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.CursorDigits, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.MarkerFormat, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.MarkerDigits, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.InterceptFormat, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.InterceptDigits, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Var2LabelVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.ParametersVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridNumberFixity, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.AddsVerticalMargin, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Notes, [VAR1] Unit=SMU2:HR, Name=VIN, Direction=Single, Linear/Log=LINEAR, Start=-10 V, Stop=2 V, Step=60 mV, No. of Steps=201, Compliance=100 mA, Pwr Comp=OFF	[CONSTANTS] Unit=SMU4:HR, Name=VDD, Source Mode=V, Source=8 V, Compliance=10 mA	[CONSTANTS] Unit=SMU1:HP, Name=VB1, Source Mode=V, Source=-12 V, Compliance=100 mA	[CONSTANTS] Unit=SMU3:HR, Name=IOUT, Source Mode=I, Source=0 A, Compliance=100 mV	[CONSTANTS] Unit=SMU5:MP, Name=VB2, Source Mode=V, Source=8 V, Compliance=100 mA
+AnalysisSetup, Analysis.Setup.Vector.Graph.SetupInfo, 		-16	0.125	161
+AnalysisSetup, Analysis.Setup.Preference.GraphVisible, true
+AnalysisSetup, Analysis.Setup.Preference.ListVisible, true
+AnalysisSetup, Analysis.Setup.Preference.ScalarVisible, true
+AnalysisSetup, Analysis.Setup.Title, REED
+Dimension1, 201, 201, 201
+Dimension2, 1, 1, 1
+DataName, VIN, VOUT, AV
+DataValue, -10, -5.6116, 1.719999999999974
+DataValue, -9.94, -5.5084000000000009, 1.5900000000000054
+DataValue, -9.88, -5.4208000000000007, 1.4466666666666797
+DataValue, -9.82, -5.3348, 1.4466666666666581
+DataValue, -9.76, -5.2472, 1.4400000000000062
+DataValue, -9.7000000000000011, -5.1620000000000008, 1.4133333333333422
+DataValue, -9.64, -5.0776, 1.4166666666666616
+DataValue, -9.58, -4.992, 1.448333333333321
+DataValue, -9.52, -4.9038, 1.4433333333333391
+DataValue, -9.46, -4.8188, 1.4508333333333441
+DataValue, -9.4, -4.7297, 1.5049999999999884
+DataValue, -9.34, -4.6382, 1.5124999999999855
+DataValue, -9.28, -4.5482000000000005, 1.5116666666666765
+DataValue, -9.22, -4.4568, 1.5141666666666782
+DataValue, -9.16, -4.3665, 1.5141666666666558
+DataValue, -9.1, -4.2751, 1.529166666666673
+DataValue, -9.0400000000000009, -4.1830000000000007, 1.5558333333333443
+DataValue, -8.98, -4.0884, 1.5699999999999916
+DataValue, -8.92, -3.9946, 1.5691666666666528
+DataValue, -8.86, -3.9001, 1.6050000000000075
+DataValue, -8.8, -3.8020000000000005, 1.6391666666666762
+DataValue, -8.74, -3.7034000000000002, 1.6591666666666534
+DataValue, -8.68, -3.6029000000000004, 1.6425000000000094
+DataValue, -8.620000000000001, -3.5063000000000004, 1.6233333333333464
+DataValue, -8.56, -3.4081, 1.6774999999999882
+DataValue, -8.5, -3.305, 1.6899999999999849
+DataValue, -8.44, -3.2053000000000003, 1.680000000000011
+DataValue, -8.38, -3.1034, 1.7141666666666797
+DataValue, -8.32, -2.9996, 1.7483333333333186
+DataValue, -8.26, -2.8936, 1.7499999999999851
+DataValue, -8.2, -2.7896, 1.7558333333333458
+DataValue, -8.14, -2.6829, 1.8125000000000102
+DataValue, -8.08, -2.5721000000000003, 1.8399999999999819
+DataValue, -8.02, -2.4621000000000004, 1.8224999999999993
+DataValue, -7.96, -2.3534, 1.8508333333333469
+DataValue, -7.9, -2.24, 1.885833333333333
+DataValue, -7.84, -2.1271, 1.8741666666666641
+DataValue, -7.78, -2.0151000000000003, 1.884833333333332
+DataValue, -7.72, -1.90092, 1.9668333333333343
+DataValue, -7.66, -1.77908, 1.9406666666666792
+DataValue, -7.6000000000000005, -1.66804, 1.8996666666666664
+DataValue, -7.54, -1.5511199999999998, 1.948999999999999
+DataValue, -7.48, -1.4341599999999999, 1.9699999999999978
+DataValue, -7.42, -1.3147199999999999, 1.9749999999999972
+DataValue, -7.36, -1.19716, 2.0143333333333309
+DataValue, -7.3, -1.073, 2.0299999999999985
+DataValue, -7.24, -0.95356, 1.9999999999999982
+DataValue, -7.18, -0.833, 2.0109999999999979
+DataValue, -7.12, -0.71224, 2.0066666666666797
+DataValue, -7.0600000000000005, -0.5922, 2.0069999999999983
+DataValue, -7, -0.4714, 2.0239999999999982
+DataValue, -6.94, -0.34931999999999996, 2.0239999999999982
+DataValue, -6.88, -0.22852, 2.0209999999999977
+DataValue, -6.82, -0.10679999999999999, 2.0156666666666649
+DataValue, -6.76, 0.013359999999999999, 2.0576666666666648
+DataValue, -6.7, 0.14012, 2.0246666666666795
+DataValue, -6.6400000000000006, 0.25632, 1.957999999999998
+DataValue, -6.58, 0.37507999999999997, 2.0196666666666645
+DataValue, -6.5200000000000005, 0.49867999999999996, 2.0083333333333315
+DataValue, -6.46, 0.61608, 2.008333333333332
+DataValue, -6.4, 0.73968, 2.0173333333333314
+DataValue, -6.34, 0.85815999999999992, 1.9939999999999978
+DataValue, -6.28, 0.97895999999999994, 1.9686666666666659
+DataValue, -6.22, 1.0944, 1.9443333333333324
+DataValue, -6.16, 1.21228, 1.9126666666666787
+DataValue, -6.1000000000000005, 1.32392, 1.93933333333333
+DataValue, -6.04, 1.4449999999999998, 1.9763333333333319
+DataValue, -5.98, 1.56108, 1.8966666666666652
+DataValue, -5.92, 1.6725999999999999, 1.8896666666666637
+DataValue, -5.86, 1.7878399999999999, 1.8959999999999979
+DataValue, -5.8, 1.9001199999999998, 1.9236666666666644
+DataValue, -5.74, 2.01868, 1.8799999999999986
+DataValue, -5.68, 2.12572, 1.8518333333333361
+DataValue, -5.62, 2.2409000000000003, 1.8873333333333495
+DataValue, -5.5600000000000005, 2.3522000000000003, 1.8133333333333319
+DataValue, -5.5, 2.4585000000000004, 1.7349999999999961
+DataValue, -5.44, 2.5604, 1.7983333333333298
+DataValue, -5.38, 2.6743, 1.8458333333333339
+DataValue, -5.32, 2.7819000000000003, 1.7083333333333324
+DataValue, -5.26, 2.8793, 1.6866666666666645
+DataValue, -5.2, 2.9843, 1.7716666666666661
+DataValue, -5.14, 3.0919000000000003, 1.7191666666666663
+DataValue, -5.08, 3.1906000000000003, 1.7175000000000127
+DataValue, -5.0200000000000005, 3.2980000000000005, 1.774166666666664
+DataValue, -4.96, 3.4035, 1.7516666666666647
+DataValue, -4.9, 3.5082000000000004, 1.7174999999999998
+DataValue, -4.84, 3.6096000000000004, 1.5974999999999984
+DataValue, -4.78, 3.6999000000000004, 1.5791666666666635
+DataValue, -4.72, 3.7991, 1.7033333333333294
+DataValue, -4.66, 3.9043, 1.7091666666666765
+DataValue, -4.6000000000000005, 4.0042, 1.6008333333333313
+DataValue, -4.54, 4.0964, 1.5608333333333357
+DataValue, -4.48, 4.1915000000000004, 1.6141666666666708
+DataValue, -4.42, 4.2901000000000007, 1.6608333333333321
+DataValue, -4.36, 4.3908000000000005, 1.6608333333333321
+DataValue, -4.3, 4.4894000000000007, 1.6199999999999979
+DataValue, -4.24, 4.5852, 1.5074999999999936
+DataValue, -4.18, 4.6703, 1.4408333333333343
+DataValue, -4.12, 4.7581000000000007, 1.4933333333333487
+DataValue, -4.0600000000000005, 4.8495000000000008, 1.434166666666661
+DataValue, -4, 4.9302, 1.3833333333333227
+DataValue, -3.94, 5.0155, 1.4516666666666647
+DataValue, -3.88, 5.1044, 1.4533333333333403
+DataValue, -3.8200000000000003, 5.1899000000000006, 1.4091666666666727
+DataValue, -3.7600000000000002, 5.2735, 1.3708333333333274
+DataValue, -3.7, 5.3544, 1.2958333333333318
+DataValue, -3.64, 5.429, 1.3833333333333351
+DataValue, -3.58, 5.5204, 1.4416666666666658
+DataValue, -3.52, 5.602, 1.3466666666666651
+DataValue, -3.46, 5.682, 1.2799999999999985
+DataValue, -3.4, 5.7556, 1.3466666666666651
+DataValue, -3.34, 5.8436, 1.3200000000000063
+DataValue, -3.2800000000000002, 5.9140000000000006, 1.1966666666666714
+DataValue, -3.22, 5.9872000000000005, 1.2066666666666659
+DataValue, -3.16, 6.0588000000000006, 1.2399999999999956
+DataValue, -3.1, 6.136, 1.2333333333333296
+DataValue, -3.04, 6.2068, 1.1700000000000033
+DataValue, -2.98, 6.2764000000000006, 1.1866666666666681
+DataValue, -2.92, 6.3492000000000006, 1.159999999999997
+DataValue, -2.86, 6.4156, 1.0133333333333356
+DataValue, -2.8000000000000003, 6.4708000000000006, 1.0300000000000005
+DataValue, -2.74, 6.5392, 1.0966666666666634
+DataValue, -2.68, 6.6024, 1.0500000000000018
+DataValue, -2.62, 6.6652000000000005, 1.030000000000004
+DataValue, -2.56, 6.7260000000000009, 0.9800000000000022
+DataValue, -2.5, 6.7828000000000008, 0.95999999999999708
+DataValue, -2.44, 6.8412000000000006, 0.94333333333333225
+DataValue, -2.38, 6.8960000000000008, 0.9900000000000011
+DataValue, -2.32, 6.9600000000000009, 0.93666666666666976
+DataValue, -2.2600000000000002, 7.0084000000000009, 0.84666666666666457
+DataValue, -2.2, 7.0616, 0.94333333333333225
+DataValue, -2.14, 7.1216000000000008, 0.90666666666666962
+DataValue, -2.08, 7.1704000000000008, 0.803333333333333
+DataValue, -2.02, 7.2180000000000009, 0.77333333333332888
+DataValue, -1.96, 7.2632, 0.75999999999999845
+DataValue, -1.9000000000000001, 7.3092000000000006, 0.80333333333333445
+DataValue, -1.84, 7.3596, 0.74666666666666515
+DataValue, -1.78, 7.3988000000000005, 0.65666666666666773
+DataValue, -1.72, 7.4384000000000006, 0.64000000000000412
+DataValue, -1.6600000000000001, 7.4756000000000009, 0.66666666666666785
+DataValue, -1.6, 7.5184000000000006, 0.69666666666666333
+DataValue, -1.54, 7.5592000000000006, 0.51666666666666849
+DataValue, -1.48, 7.5804000000000009, 0.41333333333333183
+DataValue, -1.42, 7.6088000000000005, 0.566666666666664
+DataValue, -1.36, 7.6484000000000005, 0.53666666666666729
+DataValue, -1.3, 7.6732000000000005, 0.44333333333333591
+DataValue, -1.24, 7.7016000000000009, 0.43000000000000405
+DataValue, -1.18, 7.724800000000001, 0.40333333333333371
+DataValue, -1.12, 7.7500000000000009, 0.42999999999999744
+DataValue, -1.06, 7.7764000000000006, 0.39333333333333409
+DataValue, -1, 7.797200000000001, 0.33000000000000068
+DataValue, -0.94000000000000006, 7.8160000000000007, 0.3199999999999944
+DataValue, -0.88, 7.8356, 0.29666666666666364
+DataValue, -0.82000000000000006, 7.8516, 0.27666666666666584
+DataValue, -0.76, 7.8688, 0.263333333333334
+DataValue, -0.70000000000000007, 7.8832, 0.26666666666666694
+DataValue, -0.64, 7.9008, 0.21666666666666481
+DataValue, -0.58, 7.9092, 0.15333333333333865
+DataValue, -0.52, 7.9192000000000009, 0.1666666666666706
+DataValue, -0.46, 7.9292000000000007, 0.1699999999999961
+DataValue, -0.4, 7.9396, 0.16666666666666313
+DataValue, -0.34, 7.9492, 0.1499999999999983
+DataValue, -0.28, 7.9576, 0.11000000000000267
+DataValue, -0.22, 7.9624000000000006, 0.093333333333337834
+DataValue, -0.16, 7.9688000000000008, 0.086666666666664532
+DataValue, -0.1, 7.9728, 0.076666666666665634
+DataValue, -0.04, 7.9780000000000006, 0.076666666666673017
+DataValue, 0.02, 7.9820000000000011, 0.05666666666666783
+DataValue, 0.08, 7.9848000000000008, 0.039999999999995595
+DataValue, 0.14, 7.9868000000000006, 0.043333333333328561
+DataValue, 0.2, 7.99, 0.036666666666670032
+DataValue, 0.26, 7.991200000000001, 0.023333333333338167
+DataValue, 0.32, 7.9928000000000008, 0.023333333333330764
+DataValue, 0.38, 7.9940000000000007, 0.023333333333330764
+DataValue, 0.44, 7.9956000000000005, 0.019999999999997797
+DataValue, 0.5, 7.9964, 0.01333333333333186
+DataValue, 0.56, 7.9972, 0.0066666666666659324
+DataValue, 0.62, 7.9972, 0.0066666666666659324
+DataValue, 0.68, 7.998, 0.0100000000000063
+DataValue, 0.74, 7.9984000000000011, 0.0066666666666733345
+DataValue, 0.8, 7.998800000000001, 0
+DataValue, 0.86, 7.9984000000000011, 0
+DataValue, 0.92, 7.998800000000001, 0.0033333333333329662
+DataValue, 0.98, 7.998800000000001, 0
+DataValue, 1.04, 7.998800000000001, 0.0033333333333329632
+DataValue, 1.1, 7.999200000000001, 0
+DataValue, 1.16, 7.998800000000001, 0
+DataValue, 1.22, 7.999200000000001, 0.0033333333333329632
+DataValue, 1.28, 7.999200000000001, 0
+DataValue, 1.34, 7.999200000000001, -0.0033333333333329632
+DataValue, 1.4000000000000001, 7.998800000000001, -0.0033333333333329693
+DataValue, 1.46, 7.998800000000001, 0.0033333333333329693
+DataValue, 1.52, 7.999200000000001, 0.0033333333333329632
+DataValue, 1.58, 7.999200000000001, 0
+DataValue, 1.6400000000000001, 7.999200000000001, 0
+DataValue, 1.7, 7.999200000000001, 0
+DataValue, 1.76, 7.999200000000001, 0
+DataValue, 1.82, 7.999200000000001, -0.0033333333333329632
+DataValue, 1.8800000000000001, 7.998800000000001, 0.0033333333333329693
+DataValue, 1.94, 7.9996000000000009, 0.0033333333333329693
+DataValue, 2, 7.999200000000001, -0.0066666666666659264
+SetupTitle, REED
+PrimitiveTest, I/V Sweep
+TestParameter, Context.MainFrame, B1500A
+TestParameter, Channel.UnitType, SMU, SMU, SMU, SMU, SMU
+TestParameter, Channel.Unit, SMU4:HR, SMU2:HR, SMU1:HP, SMU3:HR, SMU5:MP
+TestParameter, Channel.IName, IDD, IGND, IB1, IOUT, IB2
+TestParameter, Channel.VName, VDD, VIN, VB1, VOUT, VB2
+TestParameter, Channel.Mode, V, V, V, I, V
+TestParameter, Channel.Func, CONST, VAR1, CONST, CONST, CONST
+TestParameter, Channel.Index, 
+TestParameter, Channel.Time, 
+TestParameter, Measurement.Port.Unit, SMU4:HR, SMU2:HR, SMU1:HP, SMU3:HR, SMU5:MP
+TestParameter, Measurement.Port.SeriesResistor, NONE, NONE, NONE, NONE, NONE
+TestParameter, Measurement.Port.Filter, ON, ON, ON, ON, ON
+TestParameter, Measurement.Port.OutputVoltageComparison, 0, 0, 0, 0, 0
+TestParameter, Measurement.Primary.Locus, Single
+TestParameter, Measurement.Primary.Scale, LINEAR
+TestParameter, Measurement.Primary.Start, -10
+TestParameter, Measurement.Primary.Stop, 2
+TestParameter, Measurement.Primary.Step, 0.06
+TestParameter, Measurement.Primary.Compliance, 0.1
+TestParameter, Measurement.Primary.PowerCompliance, 0
+TestParameter, Measurement.Aborting.Condition, CONTINUE AT ANY
+TestParameter, Measurement.PostOutput.Value, START
+TestParameter, Measurement.PostOutput.Retention, OFF
+TestParameter, Measurement.Bias.Source, 8, -10, -12, 0, 4
+TestParameter, Measurement.Bias.Compliance, 0.01, 0.1, 0.1, 0.1, 0.1
+TestParameter, Measurement.Monitor.Unit, SMU4:HR, SMU2:HR, SMU1:HP, SMU3:HR, SMU5:MP
+TestParameter, Measurement.Monitor.Adc, HR ADC, HR ADC, HR ADC, HR ADC, HR ADC
+TestParameter, Measurement.Monitor.Measurement, Compliance Side, Compliance Side, Compliance Side, Compliance Side, Compliance Side
+TestParameter, Measurement.Monitor.RangingMode, LIMITED, LIMITED, LIMITED, LIMITED, LIMITED
+TestParameter, Measurement.Monitor.RangeBoundary, 1nA, 1nA, 1nA, 2V, 1nA
+TestParameter, Measurement.Monitor.RangeRating, BY FULL RANGE, BY FULL RANGE, BY FULL RANGE, BY FULL RANGE
+TestParameter, Measurement.Monitor.RangeRatingCoeff, 50, 50, 50, 50
+TestParameter, Measurement.Timing.Hold, 0
+TestParameter, Measurement.Timing.Delay, 0
+TestParameter, Measurement.Adc.HighSpeed.Mode, AUTO
+TestParameter, Measurement.Adc.HighSpeed.Coeff, 1
+TestParameter, Measurement.Adc.HighResolution.AutoZero, OFF
+TestParameter, Measurement.Adc.HighResolution.Mode, AUTO
+TestParameter, Measurement.Adc.HighResolution.Coeff, 6
+TestParameter, Measurement.WaitTime.Source.Coeff, 1
+TestParameter, Measurement.WaitTime.Source.Offset, 0
+TestParameter, Measurement.WaitTime.Monitor.Coeff, 1
+TestParameter, Measurement.WaitTime.Monitor.Offset, 0
+TestParameter, Function.User.Name, AV
+TestParameter, Function.User.Unit, 
+TestParameter, Function.User.Definition, diff(VOUT,VIN)
+TestParameter, Output.Graph.Enabled, true
+TestParameter, Output.Graph.AutoScaling, false
+TestParameter, Output.Graph.XAxis.Data, VIN
+TestParameter, Output.Graph.XAxis.Scale, Linear
+TestParameter, Output.Graph.XAxis.Left, -15
+TestParameter, Output.Graph.XAxis.Right, 0
+TestParameter, Output.Graph.XAxis.RunTimeAutoScale, true
+TestParameter, Output.Graph.YAxis.Data, VOUT, AV
+TestParameter, Output.Graph.YAxis.Scale, Linear, Linear
+TestParameter, Output.Graph.YAxis.Bottom, 0, 0
+TestParameter, Output.Graph.YAxis.Top, 12, 1
+TestParameter, Output.Graph.YAxis.Group, Group 1, 
+TestParameter, Output.Graph.YAxis.RunTimeAutoScale, true, true
+TestParameter, AutoAnalysis.Interpolation, false
+TestParameter, AutoAnalysis.Line1.Enabled, false
+TestParameter, AutoAnalysis.Line1.Type, 1
+TestParameter, AutoAnalysis.Line1.Fix, True
+TestParameter, AutoAnalysis.Line1.YAxis, 0
+TestParameter, AutoAnalysis.Line1.Point1.Type, 0
+TestParameter, AutoAnalysis.Line1.Point1.XY.X, 
+TestParameter, AutoAnalysis.Line1.Point1.XY.Y, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.Var, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.Condition, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.Start, false
+TestParameter, AutoAnalysis.Line1.Point1.Data.StartVar, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line1.Point2.Type, 0
+TestParameter, AutoAnalysis.Line1.Point2.XY.X, 
+TestParameter, AutoAnalysis.Line1.Point2.XY.Y, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.Var, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.Condition, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.Start, false
+TestParameter, AutoAnalysis.Line1.Point2.Data.StartVar, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line1.GradientExpr, 0
+TestParameter, AutoAnalysis.Line2.Enabled, false
+TestParameter, AutoAnalysis.Line2.Type, 1
+TestParameter, AutoAnalysis.Line2.Fix, True
+TestParameter, AutoAnalysis.Line2.YAxis, 0
+TestParameter, AutoAnalysis.Line2.Point1.Type, 0
+TestParameter, AutoAnalysis.Line2.Point1.XY.X, 
+TestParameter, AutoAnalysis.Line2.Point1.XY.Y, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.Var, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.Condition, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.Start, false
+TestParameter, AutoAnalysis.Line2.Point1.Data.StartVar, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line2.Point2.Type, 0
+TestParameter, AutoAnalysis.Line2.Point2.XY.X, 
+TestParameter, AutoAnalysis.Line2.Point2.XY.Y, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.Var, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.Condition, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.Start, false
+TestParameter, AutoAnalysis.Line2.Point2.Data.StartVar, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line2.GradientExpr, 0
+TestParameter, AutoAnalysis.Marker.Enabled, false
+TestParameter, AutoAnalysis.Marker.Data.Var, 
+TestParameter, AutoAnalysis.Marker.Data.Condition, 
+TestParameter, AutoAnalysis.Marker.Data.Start, false
+TestParameter, AutoAnalysis.Marker.Data.StartVar, 
+TestParameter, AutoAnalysis.Marker.Data.StartCondition, 
+MetaData, TestRecord.EntryPoint, true
+MetaData, TestRecord.RecordTime, 04/25/2022 12:41:50
+MetaData, TestRecord.TestTarget, 
+MetaData, TestRecord.IterationIndex, 18
+MetaData, TestRecord.Preservation, true
+MetaData, TestRecord.Flag, 
+MetaData, TestRecord.Remarks, 
+MetaData, TestRecord.LinkKey, d8402249-8766-4171-a69e-e24deeb11d9d
+AnalysisSetup, Analysis.Setup.Vector.Graph.Enabled, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.ActiveYAxis, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.LeftYAxis, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.RightYAxis, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Name, VIN
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.GroupName, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.RunTimeAutoScale, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Unit, V
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Scale, Linear
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Left, -10
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Right, 2
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Name, VOUT, AV
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.GroupName, Group 1, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.RunTimeAutoScale, true, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Unit, V, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Scale, Linear, Linear
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Bottom, -6.2, -0.0067
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Top, 8, 2.1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Interpolation, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Index, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Step, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.Active, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Fix, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Type, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.YAxisIndex, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.LastIndex, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.LastStep, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Gradient, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Fix, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Type, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.YAxisIndex, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.LastIndex, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.LastStep, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.NormalX, 0.20833333333333334
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.NormalY, 0.85915492957746475
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Gradient, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.BackgroundColor, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.TextColor, -16777216
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridColor, -3618616
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.LineColor, -65336
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Var2LabelColor, -11513776
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.ChangeToColor, -24416
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.LineStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Var2LabelStyle, Adjacent
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.PlotColor, -16777036
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.PlotColor, -39936
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.PlotColor, -16731136
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.PlotColor, -8892376
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.PlotColor, -65536
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.PlotColor, -14336
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.PlotColor, -6946586
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.PlotColor, -16733546
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.AxisTitle.FontName, Tahoma
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.AxisTitle.RelativeSize, Medium
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.AxisTitle.Size, 7
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.ScaleText.FontName, Tahoma
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.ScaleText.RelativeSize, Medium
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.ScaleText.Size, 7
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.Legend.FontName, Tahoma
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.Legend.RelativeSize, Medium
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.Legend.Size, 7
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Scale.LogTickedDecadeCount, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.LogoVisible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridVisible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.SetupSummaryVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.ChangeColorEnabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.MinorTicksValueVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.CursorFormat, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.CursorDigits, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.MarkerFormat, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.MarkerDigits, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.InterceptFormat, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.InterceptDigits, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Var2LabelVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.ParametersVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridNumberFixity, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.AddsVerticalMargin, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Notes, [VAR1] Unit=SMU2:HR, Name=VIN, Direction=Single, Linear/Log=LINEAR, Start=-10 V, Stop=2 V, Step=60 mV, No. of Steps=201, Compliance=100 mA, Pwr Comp=OFF	[CONSTANTS] Unit=SMU4:HR, Name=VDD, Source Mode=V, Source=8 V, Compliance=10 mA	[CONSTANTS] Unit=SMU1:HP, Name=VB1, Source Mode=V, Source=-12 V, Compliance=100 mA	[CONSTANTS] Unit=SMU3:HR, Name=IOUT, Source Mode=I, Source=0 A, Compliance=100 mV	[CONSTANTS] Unit=SMU5:MP, Name=VB2, Source Mode=V, Source=4 V, Compliance=100 mA
+AnalysisSetup, Analysis.Setup.Vector.Graph.SetupInfo, 		-16	0.125	161
+AnalysisSetup, Analysis.Setup.Preference.GraphVisible, true
+AnalysisSetup, Analysis.Setup.Preference.ListVisible, true
+AnalysisSetup, Analysis.Setup.Preference.ScalarVisible, true
+AnalysisSetup, Analysis.Setup.Title, REED
+Dimension1, 201, 201, 201
+Dimension2, 1, 1, 1
+DataName, VIN, VOUT, AV
+DataValue, -10, -5.9380000000000006, 1.4399999999999924
+DataValue, -9.94, -5.8516, 1.4133333333333422
+DataValue, -9.88, -5.7684000000000006, 1.3400000000000092
+DataValue, -9.82, -5.6908, 1.2966666666666538
+DataValue, -9.76, -5.6128000000000009, 1.2933333333333399
+DataValue, -9.7000000000000011, -5.5356000000000005, 1.3133333333333452
+DataValue, -9.64, -5.4552000000000005, 1.3266666666666576
+DataValue, -9.58, -5.3764, 1.3499999999999881
+DataValue, -9.52, -5.2932000000000006, 1.3733333333333391
+DataValue, -9.46, -5.2116000000000007, 1.3600000000000072
+DataValue, -9.4, -5.1300000000000008, 1.3633333333333273
+DataValue, -9.34, -5.048, 1.3858333333333266
+DataValue, -9.28, -4.9637, 1.4025000000000045
+DataValue, -9.22, -4.8797000000000006, 1.3941666666666759
+DataValue, -9.16, -4.7964, 1.397499999999988
+DataValue, -9.1, -4.7120000000000006, 1.4241666666666726
+DataValue, -9.0400000000000009, -4.6255000000000006, 1.4308333333333461
+DataValue, -8.98, -4.5403, 1.4316666666666562
+DataValue, -8.92, -4.4537, 1.4541666666666555
+DataValue, -8.86, -4.3658, 1.4641666666666759
+DataValue, -8.8, -4.2780000000000005, 1.489166666666677
+DataValue, -8.74, -4.1871, 1.4908333333333252
+DataValue, -8.68, -4.0991, 1.4941666666666729
+DataValue, -8.620000000000001, -4.0078000000000005, 1.5275000000000063
+DataValue, -8.56, -3.9158000000000004, 1.5608333333333206
+DataValue, -8.5, -3.8205000000000005, 1.5558333333333212
+DataValue, -8.44, -3.7291000000000003, 1.5741666666666794
+DataValue, -8.38, -3.6316, 1.5950000000000086
+DataValue, -8.32, -3.5377000000000005, 1.5808333333333182
+DataValue, -8.26, -3.4419000000000004, 1.6208333333333209
+DataValue, -8.2, -3.3432000000000004, 1.6150000000000102
+DataValue, -8.14, -3.2481000000000004, 1.6291666666666773
+DataValue, -8.08, -3.1477000000000004, 1.6974999999999858
+DataValue, -8.02, -3.0444000000000004, 1.6716666666666662
+DataValue, -7.96, -2.9471000000000003, 1.6608333333333445
+DataValue, -7.9, -2.8451000000000004, 1.691666666666664
+DataValue, -7.84, -2.7441000000000004, 1.7408333333333343
+DataValue, -7.78, -2.6362, 1.7524999999999997
+DataValue, -7.72, -2.5338000000000003, 1.7433333333333323
+DataValue, -7.66, -2.427, 1.7816666666666783
+DataValue, -7.6000000000000005, -2.3200000000000003, 1.7983333333333298
+DataValue, -7.54, -2.2112000000000003, 1.8216666666666643
+DataValue, -7.48, -2.1014000000000004, 1.8336666666666688
+DataValue, -7.42, -1.9911599999999998, 1.8496666666666681
+DataValue, -7.36, -1.87944, 1.857999999999997
+DataValue, -7.3, -1.7682, 1.8723333333333316
+DataValue, -7.24, -1.65476, 1.8949999999999987
+DataValue, -7.18, -1.5408, 1.9169999999999985
+DataValue, -7.12, -1.42472, 1.9073333333333455
+DataValue, -7.0600000000000005, -1.31192, 1.8873333333333318
+DataValue, -7, -1.19824, 1.9106666666666643
+DataValue, -6.94, -1.08264, 1.9239999999999982
+DataValue, -6.88, -0.96736, 1.9519999999999993
+DataValue, -6.82, -0.84839999999999993, 1.9989999999999981
+DataValue, -6.76, -0.72748, 1.9753333333333309
+DataValue, -6.7, -0.61136, 1.9643333333333464
+DataValue, -6.6400000000000006, -0.49176, 1.9759999999999987
+DataValue, -6.58, -0.37423999999999996, 2.0039999999999978
+DataValue, -6.5200000000000005, -0.25128, 2.0073333333333312
+DataValue, -6.46, -0.13336, 1.9926666666666648
+DataValue, -6.4, -0.012159999999999999, 1.9933333333333316
+DataValue, -6.34, 0.10583999999999999, 1.9876666666666647
+DataValue, -6.28, 0.22635999999999998, 1.9923333333333317
+DataValue, -6.22, 0.34492, 1.9626666666666648
+DataValue, -6.16, 0.46187999999999996, 1.9760000000000129
+DataValue, -6.1000000000000005, 0.58204, 2.0009999999999981
+DataValue, -6.04, 0.702, 2.0063333333333313
+DataValue, -5.98, 0.8228, 1.988333333333332
+DataValue, -5.92, 0.9406, 1.9756666666666645
+DataValue, -5.86, 1.05988, 1.9896666666666647
+DataValue, -5.8, 1.17936, 1.9503333333333319
+DataValue, -5.74, 1.29392, 1.9473333333333307
+DataValue, -5.68, 1.4130399999999999, 1.968666666666665
+DataValue, -5.62, 1.53016, 1.9386666666666808
+DataValue, -5.5600000000000005, 1.64568, 1.9106666666666643
+DataValue, -5.5, 1.75944, 1.9213333333333307
+DataValue, -5.44, 1.87624, 1.9019999999999984
+DataValue, -5.38, 1.98768, 1.866333333333333
+DataValue, -5.32, 2.1002, 1.8960000000000015
+DataValue, -5.26, 2.2152000000000003, 1.9033333333333329
+DataValue, -5.2, 2.3286000000000002, 1.8608333333333322
+DataValue, -5.14, 2.4385000000000003, 1.8424999999999971
+DataValue, -5.08, 2.5497, 1.8566666666666778
+DataValue, -5.0200000000000005, 2.6613, 1.8508333333333333
+DataValue, -4.96, 2.7718000000000003, 1.7699999999999996
+DataValue, -4.9, 2.8737000000000004, 1.781666666666665
+DataValue, -4.84, 2.9856000000000003, 1.7874999999999959
+DataValue, -4.78, 3.0882, 1.7541666666666662
+DataValue, -4.72, 3.1961000000000004, 1.8483333333333316
+DataValue, -4.66, 3.31, 1.7816666666666783
+DataValue, -4.6000000000000005, 3.4099000000000004, 1.7541666666666662
+DataValue, -4.54, 3.5205, 1.7399999999999993
+DataValue, -4.48, 3.6187000000000005, 1.7591666666666657
+DataValue, -4.42, 3.7316000000000002, 1.7408333333333306
+DataValue, -4.36, 3.8276000000000003, 1.6841666666666666
+DataValue, -4.3, 3.9337000000000004, 1.6841666666666628
+DataValue, -4.24, 4.0297, 1.610833333333334
+DataValue, -4.18, 4.1270000000000007, 1.7066666666666697
+DataValue, -4.12, 4.2345000000000006, 1.7475000000000096
+DataValue, -4.0600000000000005, 4.3367, 1.6249999999999936
+DataValue, -4, 4.4295, 1.552499999999994
+DataValue, -3.94, 4.5230000000000006, 1.6141666666666708
+DataValue, -3.88, 4.6232000000000006, 1.6241666666666681
+DataValue, -3.8200000000000003, 4.7179, 1.5866666666666667
+DataValue, -3.7600000000000002, 4.8136, 1.5925000000000027
+DataValue, -3.7, 4.9090000000000007, 1.5499999999999981
+DataValue, -3.64, 4.9996, 1.5308333333333317
+DataValue, -3.58, 5.0927000000000007, 1.5541666666666698
+DataValue, -3.52, 5.1861000000000006, 1.52666666666666
+DataValue, -3.46, 5.2759, 1.519999999999994
+DataValue, -3.4, 5.3685, 1.5241666666666658
+DataValue, -3.34, 5.4588, 1.4091666666666727
+DataValue, -3.2800000000000002, 5.5376, 1.4100000000000041
+DataValue, -3.22, 5.628, 1.5133333333333356
+DataValue, -3.16, 5.7192000000000007, 1.3866666666666681
+DataValue, -3.1, 5.7944, 1.2999999999999963
+DataValue, -3.04, 5.8752, 1.3766666666666692
+DataValue, -2.98, 5.9596000000000009, 1.3966666666666669
+DataValue, -2.92, 6.0428000000000006, 1.3666666666666629
+DataValue, -2.86, 6.1236000000000006, 1.2866666666666693
+DataValue, -2.8000000000000003, 6.1972000000000005, 1.1666666666666672
+DataValue, -2.74, 6.2636, 1.2433333333333358
+DataValue, -2.68, 6.3464000000000009, 1.3333333333333333
+DataValue, -2.62, 6.4236, 1.1933333333333267
+DataValue, -2.56, 6.4896, 1.159999999999997
+DataValue, -2.5, 6.5628, 1.1033333333333366
+DataValue, -2.44, 6.6220000000000008, 1.1266666666666674
+DataValue, -2.38, 6.698, 1.2033333333333329
+DataValue, -2.32, 6.7664000000000009, 1.1166666666666727
+DataValue, -2.2600000000000002, 6.8320000000000007, 1.0066666666666697
+DataValue, -2.2, 6.8872000000000009, 0.93666666666666631
+DataValue, -2.14, 6.9444000000000008, 0.97666666666666191
+DataValue, -2.08, 7.0044, 0.98333333333332773
+DataValue, -2.02, 7.0624, 0.96333333333333737
+DataValue, -1.96, 7.120000000000001, 0.86333333333333528
+DataValue, -1.9000000000000001, 7.166, 0.81000000000000039
+DataValue, -1.84, 7.2172000000000009, 0.76333333333333742
+DataValue, -1.78, 7.2576000000000009, 0.74666666666666515
+DataValue, -1.72, 7.3068000000000008, 0.80333333333333445
+DataValue, -1.6600000000000001, 7.354000000000001, 0.74000000000000066
+DataValue, -1.6, 7.3956000000000008, 0.759999999999997
+DataValue, -1.54, 7.4452000000000007, 0.74333333333333218
+DataValue, -1.48, 7.4848000000000008, 0.61999999999999778
+DataValue, -1.42, 7.5196000000000005, 0.63999999999999679
+DataValue, -1.36, 7.5616, 0.63333333333333819
+DataValue, -1.3, 7.595600000000001, 0.53999999999999926
+DataValue, -1.24, 7.6264, 0.51666666666666117
+DataValue, -1.18, 7.6576, 0.47666666666666646
+DataValue, -1.12, 7.6836, 0.43000000000000488
+DataValue, -1.06, 7.7092000000000009, 0.45666666666666778
+DataValue, -1, 7.7384, 0.51666666666666161
+DataValue, -0.94000000000000006, 7.7712, 0.47000000000000008
+DataValue, -0.88, 7.7948, 0.41333333333333222
+DataValue, -0.82000000000000006, 7.8208, 0.32666666666666772
+DataValue, -0.76, 7.8340000000000005, 0.26666666666666694
+DataValue, -0.70000000000000007, 7.8528, 0.35333333333333145
+DataValue, -0.64, 7.8764, 0.33666666666666628
+DataValue, -0.58, 7.8932, 0.25333333333333508
+DataValue, -0.52, 7.9068000000000005, 0.19666666666666732
+DataValue, -0.46, 7.9168, 0.18333333333333535
+DataValue, -0.4, 7.9288000000000007, 0.17666666666666941
+DataValue, -0.34, 7.9380000000000006, 0.16666666666666313
+DataValue, -0.28, 7.9488, 0.15666666666666418
+DataValue, -0.22, 7.9568, 0.1166666666666686
+DataValue, -0.16, 7.9628000000000005, 0.11000000000000269
+DataValue, -0.1, 7.9700000000000006, 0.096666666666670828
+DataValue, -0.04, 7.974400000000001, 0.066666666666666721
+DataValue, 0.02, 7.9780000000000006, 0.066666666666666735
+DataValue, 0.08, 7.982400000000001, 0.063333333333333755
+DataValue, 0.14, 7.9856000000000007, 0.04666666666666152
+DataValue, 0.2, 7.988, 0.036666666666662628
+DataValue, 0.26, 7.99, 0.026666666666671134
+DataValue, 0.32, 7.991200000000001, 0.023333333333338167
+DataValue, 0.38, 7.9928000000000008, 0.023333333333330764
+DataValue, 0.44, 7.9940000000000007, 0.019999999999997797
+DataValue, 0.5, 7.9952000000000005, 0.016666666666664824
+DataValue, 0.56, 7.996, 0.0099999999999988987
+DataValue, 0.62, 7.9964, 0.0099999999999988987
+DataValue, 0.68, 7.9972, 0.0066666666666659324
+DataValue, 0.74, 7.9972, 0.0033333333333329662
+DataValue, 0.8, 7.9976, 0.0100000000000063
+DataValue, 0.86, 7.9984000000000011, 0.0066666666666733345
+DataValue, 0.92, 7.9984000000000011, 0
+DataValue, 0.98, 7.9984000000000011, 0
+DataValue, 1.04, 7.9984000000000011, 0
+DataValue, 1.1, 7.9984000000000011, 0.0033333333333329693
+DataValue, 1.16, 7.998800000000001, -0.0033333333333403709
+DataValue, 1.22, 7.998, 0
+DataValue, 1.28, 7.998800000000001, 0.0066666666666733284
+DataValue, 1.34, 7.998800000000001, 0
+DataValue, 1.4000000000000001, 7.998800000000001, 0
+DataValue, 1.46, 7.998800000000001, 0
+DataValue, 1.52, 7.998800000000001, 0
+DataValue, 1.58, 7.998800000000001, 0
+DataValue, 1.6400000000000001, 7.998800000000001, 0
+DataValue, 1.7, 7.998800000000001, 0
+DataValue, 1.76, 7.998800000000001, 0.0033333333333329632
+DataValue, 1.82, 7.999200000000001, 0.0033333333333329632
+DataValue, 1.8800000000000001, 7.999200000000001, 0
+DataValue, 1.94, 7.999200000000001, -0.0033333333333329693
+DataValue, 2, 7.998800000000001, -0.0066666666666659264
+SetupTitle, REED
+PrimitiveTest, I/V Sweep
+TestParameter, Context.MainFrame, B1500A
+TestParameter, Channel.UnitType, SMU, SMU, SMU, SMU, SMU
+TestParameter, Channel.Unit, SMU4:HR, SMU2:HR, SMU1:HP, SMU3:HR, SMU5:MP
+TestParameter, Channel.IName, IDD, IGND, IB1, IOUT, IB2
+TestParameter, Channel.VName, VDD, VIN, VB1, VOUT, VB2
+TestParameter, Channel.Mode, V, V, V, I, V
+TestParameter, Channel.Func, CONST, VAR1, CONST, CONST, CONST
+TestParameter, Channel.Index, 
+TestParameter, Channel.Time, 
+TestParameter, Measurement.Port.Unit, SMU4:HR, SMU2:HR, SMU1:HP, SMU3:HR, SMU5:MP
+TestParameter, Measurement.Port.SeriesResistor, NONE, NONE, NONE, NONE, NONE
+TestParameter, Measurement.Port.Filter, ON, ON, ON, ON, ON
+TestParameter, Measurement.Port.OutputVoltageComparison, 0, 0, 0, 0, 0
+TestParameter, Measurement.Primary.Locus, Single
+TestParameter, Measurement.Primary.Scale, LINEAR
+TestParameter, Measurement.Primary.Start, -10
+TestParameter, Measurement.Primary.Stop, 2
+TestParameter, Measurement.Primary.Step, 0.06
+TestParameter, Measurement.Primary.Compliance, 0.1
+TestParameter, Measurement.Primary.PowerCompliance, 0
+TestParameter, Measurement.Aborting.Condition, CONTINUE AT ANY
+TestParameter, Measurement.PostOutput.Value, START
+TestParameter, Measurement.PostOutput.Retention, OFF
+TestParameter, Measurement.Bias.Source, 8, -10, -12, 0, 2
+TestParameter, Measurement.Bias.Compliance, 0.01, 0.1, 0.1, 0.1, 0.1
+TestParameter, Measurement.Monitor.Unit, SMU4:HR, SMU2:HR, SMU1:HP, SMU3:HR, SMU5:MP
+TestParameter, Measurement.Monitor.Adc, HR ADC, HR ADC, HR ADC, HR ADC, HR ADC
+TestParameter, Measurement.Monitor.Measurement, Compliance Side, Compliance Side, Compliance Side, Compliance Side, Compliance Side
+TestParameter, Measurement.Monitor.RangingMode, LIMITED, LIMITED, LIMITED, LIMITED, LIMITED
+TestParameter, Measurement.Monitor.RangeBoundary, 1nA, 1nA, 1nA, 2V, 1nA
+TestParameter, Measurement.Monitor.RangeRating, BY FULL RANGE, BY FULL RANGE, BY FULL RANGE, BY FULL RANGE
+TestParameter, Measurement.Monitor.RangeRatingCoeff, 50, 50, 50, 50
+TestParameter, Measurement.Timing.Hold, 0
+TestParameter, Measurement.Timing.Delay, 0
+TestParameter, Measurement.Adc.HighSpeed.Mode, AUTO
+TestParameter, Measurement.Adc.HighSpeed.Coeff, 1
+TestParameter, Measurement.Adc.HighResolution.AutoZero, OFF
+TestParameter, Measurement.Adc.HighResolution.Mode, AUTO
+TestParameter, Measurement.Adc.HighResolution.Coeff, 6
+TestParameter, Measurement.WaitTime.Source.Coeff, 1
+TestParameter, Measurement.WaitTime.Source.Offset, 0
+TestParameter, Measurement.WaitTime.Monitor.Coeff, 1
+TestParameter, Measurement.WaitTime.Monitor.Offset, 0
+TestParameter, Function.User.Name, AV
+TestParameter, Function.User.Unit, 
+TestParameter, Function.User.Definition, diff(VOUT,VIN)
+TestParameter, Output.Graph.Enabled, true
+TestParameter, Output.Graph.AutoScaling, false
+TestParameter, Output.Graph.XAxis.Data, VIN
+TestParameter, Output.Graph.XAxis.Scale, Linear
+TestParameter, Output.Graph.XAxis.Left, -15
+TestParameter, Output.Graph.XAxis.Right, 0
+TestParameter, Output.Graph.XAxis.RunTimeAutoScale, true
+TestParameter, Output.Graph.YAxis.Data, VOUT, AV
+TestParameter, Output.Graph.YAxis.Scale, Linear, Linear
+TestParameter, Output.Graph.YAxis.Bottom, 0, 0
+TestParameter, Output.Graph.YAxis.Top, 12, 1
+TestParameter, Output.Graph.YAxis.Group, Group 1, 
+TestParameter, Output.Graph.YAxis.RunTimeAutoScale, true, true
+TestParameter, AutoAnalysis.Interpolation, false
+TestParameter, AutoAnalysis.Line1.Enabled, false
+TestParameter, AutoAnalysis.Line1.Type, 1
+TestParameter, AutoAnalysis.Line1.Fix, True
+TestParameter, AutoAnalysis.Line1.YAxis, 0
+TestParameter, AutoAnalysis.Line1.Point1.Type, 0
+TestParameter, AutoAnalysis.Line1.Point1.XY.X, 
+TestParameter, AutoAnalysis.Line1.Point1.XY.Y, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.Var, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.Condition, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.Start, false
+TestParameter, AutoAnalysis.Line1.Point1.Data.StartVar, 
+TestParameter, AutoAnalysis.Line1.Point1.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line1.Point2.Type, 0
+TestParameter, AutoAnalysis.Line1.Point2.XY.X, 
+TestParameter, AutoAnalysis.Line1.Point2.XY.Y, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.Var, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.Condition, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.Start, false
+TestParameter, AutoAnalysis.Line1.Point2.Data.StartVar, 
+TestParameter, AutoAnalysis.Line1.Point2.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line1.GradientExpr, 0
+TestParameter, AutoAnalysis.Line2.Enabled, false
+TestParameter, AutoAnalysis.Line2.Type, 1
+TestParameter, AutoAnalysis.Line2.Fix, True
+TestParameter, AutoAnalysis.Line2.YAxis, 0
+TestParameter, AutoAnalysis.Line2.Point1.Type, 0
+TestParameter, AutoAnalysis.Line2.Point1.XY.X, 
+TestParameter, AutoAnalysis.Line2.Point1.XY.Y, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.Var, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.Condition, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.Start, false
+TestParameter, AutoAnalysis.Line2.Point1.Data.StartVar, 
+TestParameter, AutoAnalysis.Line2.Point1.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line2.Point2.Type, 0
+TestParameter, AutoAnalysis.Line2.Point2.XY.X, 
+TestParameter, AutoAnalysis.Line2.Point2.XY.Y, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.Var, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.Condition, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.Start, false
+TestParameter, AutoAnalysis.Line2.Point2.Data.StartVar, 
+TestParameter, AutoAnalysis.Line2.Point2.Data.StartCondition, 
+TestParameter, AutoAnalysis.Line2.GradientExpr, 0
+TestParameter, AutoAnalysis.Marker.Enabled, false
+TestParameter, AutoAnalysis.Marker.Data.Var, 
+TestParameter, AutoAnalysis.Marker.Data.Condition, 
+TestParameter, AutoAnalysis.Marker.Data.Start, false
+TestParameter, AutoAnalysis.Marker.Data.StartVar, 
+TestParameter, AutoAnalysis.Marker.Data.StartCondition, 
+MetaData, TestRecord.EntryPoint, true
+MetaData, TestRecord.RecordTime, 04/25/2022 12:41:36
+MetaData, TestRecord.TestTarget, 
+MetaData, TestRecord.IterationIndex, 17
+MetaData, TestRecord.Preservation, true
+MetaData, TestRecord.Flag, 
+MetaData, TestRecord.Remarks, 80/5,30/5,Lacc=2
+MetaData, TestRecord.LinkKey, d8402249-8766-4171-a69e-e24deeb11d9d
+AnalysisSetup, Analysis.Setup.Vector.Graph.Enabled, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.ActiveYAxis, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.LeftYAxis, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.RightYAxis, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Name, VIN
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.GroupName, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.RunTimeAutoScale, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Unit, V
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Scale, Linear
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Left, -10
+AnalysisSetup, Analysis.Setup.Vector.Graph.XAxis.Right, -2.3
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Name, VOUT, AV
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.GroupName, Group 1, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.RunTimeAutoScale, true, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Unit, V, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Scale, Linear, Linear
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Bottom, -6.2, 1.2
+AnalysisSetup, Analysis.Setup.Vector.Graph.YAxis.Top, 6.3000000000000007, 2
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Interpolation, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Index, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Marker.Step, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.Active, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.NormalX, 0.32467532467532467
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Cursor.NormalY, 0.976
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Fix, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Type, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.YAxisIndex, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.LastIndex, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.LastStep, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.NormalX, 0.32467532467532467
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor1.NormalY, 0.976
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.NormalX, 0.32467532467532467
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Cursor2.NormalY, 0.976
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line1.Gradient, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Fix, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Type, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.YAxisIndex, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.LastIndex, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.LastStep, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.NormalX, 0.32467532467532467
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor1.NormalY, 0.976
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.Enabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.Active, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.NormalX, 0.32467532467532467
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Cursor2.NormalY, 0.976
+AnalysisSetup, Analysis.Setup.Vector.Graph.Operation.Line2.Gradient, 
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.BackgroundColor, -1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.TextColor, -16777216
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridColor, -3618616
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.LineColor, -65336
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Var2LabelColor, -11513776
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.ChangeToColor, -24416
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.LineStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Var2LabelStyle, Adjacent
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.PlotColor, -16777036
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y1.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.PlotColor, -39936
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y2.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.PlotColor, -16731136
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y3.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.PlotColor, -8892376
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y4.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.PlotColor, -65536
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y5.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.PlotColor, -14336
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y6.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.PlotColor, -6946586
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y7.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.Visible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.PlotColor, -16733546
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.Thickness, 1
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Plots.Y8.PlotStyle, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.AxisTitle.FontName, Tahoma
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.AxisTitle.RelativeSize, Medium
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.AxisTitle.Size, 7
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.ScaleText.FontName, Tahoma
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.ScaleText.RelativeSize, Medium
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.ScaleText.Size, 7
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.Legend.FontName, Tahoma
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.Legend.RelativeSize, Medium
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Text.Legend.Size, 7
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Scale.LogTickedDecadeCount, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.LogoVisible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridVisible, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.SetupSummaryVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.ChangeColorEnabled, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.MinorTicksValueVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.CursorFormat, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.CursorDigits, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.MarkerFormat, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.MarkerDigits, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.InterceptFormat, 0
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.InterceptDigits, 6
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.Var2LabelVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.ParametersVisible, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.GridNumberFixity, false
+AnalysisSetup, Analysis.Setup.Vector.Graph.Preference.AddsVerticalMargin, true
+AnalysisSetup, Analysis.Setup.Vector.Graph.Notes, [VAR1] Unit=SMU2:HR, Name=VIN, Direction=Single, Linear/Log=LINEAR, Start=-10 V, Stop=2 V, Step=60 mV, No. of Steps=201, Compliance=100 mA, Pwr Comp=OFF	[CONSTANTS] Unit=SMU4:HR, Name=VDD, Source Mode=V, Source=8 V, Compliance=10 mA	[CONSTANTS] Unit=SMU1:HP, Name=VB1, Source Mode=V, Source=-12 V, Compliance=100 mA	[CONSTANTS] Unit=SMU3:HR, Name=IOUT, Source Mode=I, Source=0 A, Compliance=100 mV	[CONSTANTS] Unit=SMU5:MP, Name=VB2, Source Mode=V, Source=2 V, Compliance=100 mA
+AnalysisSetup, Analysis.Setup.Vector.Graph.SetupInfo, 		-16	0.125	161
+AnalysisSetup, Analysis.Setup.Preference.GraphVisible, true
+AnalysisSetup, Analysis.Setup.Preference.ListVisible, true
+AnalysisSetup, Analysis.Setup.Preference.ScalarVisible, true
+AnalysisSetup, Analysis.Setup.Title, REED
+Dimension1, 201, 201, 201
+Dimension2, 1, 1, 1
+DataName, VIN, VOUT, AV
+DataValue, -10, -6.1848, 1.2733333333333157
+DataValue, -9.94, -6.1084000000000005, 1.2700000000000016
+DataValue, -9.88, -6.0324000000000009, 1.2533333333333441
+DataValue, -9.82, -5.958, 1.2399999999999938
+DataValue, -9.76, -5.8836, 1.2600000000000027
+DataValue, -9.7000000000000011, -5.8068000000000008, 1.2533333333333441
+DataValue, -9.64, -5.7332, 1.2466666666666597
+DataValue, -9.58, -5.6572000000000005, 1.2799999999999892
+DataValue, -9.52, -5.5796, 1.2966666666666729
+DataValue, -9.46, -5.5016000000000007, 1.2933333333333399
+DataValue, -9.4, -5.4244, 1.303333333333327
+DataValue, -9.34, -5.3452, 1.3199999999999916
+DataValue, -9.28, -5.266, 1.3133333333333379
+DataValue, -9.22, -5.1876000000000007, 1.3233333333333368
+DataValue, -9.16, -5.1072000000000006, 1.3299999999999905
+DataValue, -9.1, -5.0280000000000005, 1.3266666666666773
+DataValue, -9.0400000000000009, -4.948, 1.3533333333333411
+DataValue, -8.98, -4.8656000000000006, 1.3641666666666588
+DataValue, -8.92, -4.7843, 1.3433333333333224
+DataValue, -8.86, -4.7044000000000006, 1.3700000000000061
+DataValue, -8.8, -4.6199, 1.4183333333333454
+DataValue, -8.74, -4.5342, 1.4016666666666524
+DataValue, -8.68, -4.4517000000000007, 1.3950000000000071
+DataValue, -8.620000000000001, -4.3668000000000005, 1.4208333333333472
+DataValue, -8.56, -4.2812, 1.4499999999999911
+DataValue, -8.5, -4.1928, 1.4516666666666538
+DataValue, -8.44, -4.107, 1.4466666666666721
+DataValue, -8.38, -4.0192000000000006, 1.4733333333333436
+DataValue, -8.32, -3.9302, 1.4583333333333235
+DataValue, -8.26, -3.8442000000000003, 1.4691666666666536
+DataValue, -8.2, -3.7539000000000002, 1.5250000000000086
+DataValue, -8.14, -3.6612000000000005, 1.5241666666666771
+DataValue, -8.08, -3.571, 1.5383333333333213
+DataValue, -8.02, -3.4766000000000004, 1.5383333333333329
+DataValue, -7.96, -3.3864, 1.5508333333333446
+DataValue, -7.9, -3.2905, 1.5791666666666635
+DataValue, -7.84, -3.1969000000000003, 1.581666666666665
+DataValue, -7.78, -3.1007000000000002, 1.6091666666666675
+DataValue, -7.72, -3.0038, 1.6308333333333318
+DataValue, -7.66, -2.9050000000000002, 1.6475000000000089
+DataValue, -7.6000000000000005, -2.8061000000000003, 1.6558333333333326
+DataValue, -7.54, -2.7063, 1.6766666666666656
+DataValue, -7.48, -2.6049, 1.6966666666666634
+DataValue, -7.42, -2.5027000000000004, 1.7158333333333333
+DataValue, -7.36, -2.399, 1.7158333333333333
+DataValue, -7.3, -2.2968, 1.7124999999999968
+DataValue, -7.24, -2.1935000000000002, 1.7333333333333334
+DataValue, -7.18, -2.0888, 1.7661666666666671
+DataValue, -7.12, -1.98156, 1.7673333333333452
+DataValue, -7.0600000000000005, -1.87672, 1.7699999999999996
+DataValue, -7, -1.7691599999999998, 1.8026666666666655
+DataValue, -6.94, -1.6603999999999999, 1.8356666666666635
+DataValue, -6.88, -1.54888, 1.8436666666666641
+DataValue, -6.82, -1.43916, 1.8536666666666666
+DataValue, -6.76, -1.3264399999999998, 1.8483333333333316
+DataValue, -6.7, -1.21736, 1.8500000000000119
+DataValue, -6.6400000000000006, -1.1044399999999999, 1.9093333333333316
+DataValue, -6.58, -0.98824, 1.9053333333333313
+DataValue, -6.5200000000000005, -0.87579999999999991, 1.8679999999999986
+DataValue, -6.46, -0.76408, 1.8819999999999977
+DataValue, -6.4, -0.64996, 1.9219999999999979
+DataValue, -6.34, -0.53344, 1.9196666666666651
+DataValue, -6.28, -0.4196, 1.901333333333332
+DataValue, -6.22, -0.30528, 1.9283333333333317
+DataValue, -6.16, -0.18819999999999998, 1.9246666666666792
+DataValue, -6.1000000000000005, -0.07432, 1.9256666666666649
+DataValue, -6.04, 0.04288, 1.8999999999999981
+DataValue, -5.98, 0.15367999999999998, 1.8933333333333315
+DataValue, -5.92, 0.27008, 1.9226666666666648
+DataValue, -5.86, 0.38439999999999996, 1.9106666666666647
+DataValue, -5.8, 0.49935999999999997, 1.9006666666666654
+DataValue, -5.74, 0.61248, 1.9083333333333319
+DataValue, -5.68, 0.72836, 1.9199999999999977
+DataValue, -5.62, 0.84288, 1.9130000000000123
+DataValue, -5.5600000000000005, 0.95792, 1.8826666666666652
+DataValue, -5.5, 1.0688, 1.8583333333333314
+DataValue, -5.44, 1.18092, 1.8766666666666656
+DataValue, -5.38, 1.294, 1.8749999999999973
+DataValue, -5.32, 1.4059199999999998, 1.8729999999999971
+DataValue, -5.26, 1.5187599999999999, 1.859999999999999
+DataValue, -5.2, 1.62912, 1.8329999999999977
+DataValue, -5.14, 1.7387199999999998, 1.8573333333333315
+DataValue, -5.08, 1.8519999999999999, 1.8570000000000133
+DataValue, -5.0200000000000005, 1.96156, 1.8416666666666657
+DataValue, -4.96, 2.073, 1.8393333333333319
+DataValue, -4.9, 2.18228, 1.8125000000000004
+DataValue, -4.84, 2.2905, 1.776000000000002
+DataValue, -4.78, 2.3954000000000004, 1.7641666666666651
+DataValue, -4.72, 2.5022, 1.7674999999999981
+DataValue, -4.66, 2.6075000000000004, 1.7733333333333456
+DataValue, -4.6000000000000005, 2.7150000000000003, 1.7924999999999989
+DataValue, -4.54, 2.8226000000000004, 1.7766666666666655
+DataValue, -4.48, 2.9282000000000004, 1.749166666666663
+DataValue, -4.42, 3.0325, 1.7483333333333317
+DataValue, -4.36, 3.1380000000000003, 1.7516666666666647
+DataValue, -4.3, 3.2427, 1.7083333333333324
+DataValue, -4.24, 3.3430000000000004, 1.6974999999999985
+DataValue, -4.18, 3.4464, 1.7024999999999979
+DataValue, -4.12, 3.5473000000000003, 1.7133333333333445
+DataValue, -4.0600000000000005, 3.652, 1.7074999999999974
+DataValue, -4, 3.7522, 1.6483333333333257
+DataValue, -3.94, 3.8498, 1.6274999999999988
+DataValue, -3.88, 3.9475000000000002, 1.6450000000000049
+DataValue, -3.8200000000000003, 4.0472, 1.6116666666666712
+DataValue, -3.7600000000000002, 4.1409, 1.615000000000002
+DataValue, -3.7, 4.2410000000000005, 1.6291666666666653
+DataValue, -3.64, 4.3364, 1.5758333333333305
+DataValue, -3.58, 4.4301, 1.5841666666666665
+DataValue, -3.52, 4.5265, 1.5666666666666629
+DataValue, -3.46, 4.6181, 1.5266666666666675
+DataValue, -3.4, 4.7097000000000007, 1.5558333333333327
+DataValue, -3.34, 4.8048, 1.5549999999999997
+DataValue, -3.2800000000000002, 4.8963, 1.5358333333333405
+DataValue, -3.22, 4.9891000000000005, 1.5366666666666664
+DataValue, -3.16, 5.0807, 1.4849999999999943
+DataValue, -3.1, 5.1673, 1.4558333333333364
+DataValue, -3.04, 5.2554000000000007, 1.495833333333332
+DataValue, -2.98, 5.3468, 1.4633333333333263
+DataValue, -2.92, 5.431, 1.4233333333333382
+DataValue, -2.86, 5.5176000000000007, 1.4383333333333381
+DataValue, -2.8000000000000003, 5.6036, 1.4566666666666657
+DataValue, -2.74, 5.6924, 1.390000000000001
+DataValue, -2.68, 5.7704, 1.3600000000000045
+DataValue, -2.62, 5.8556000000000008, 1.4099999999999988
+DataValue, -2.56, 5.9396, 1.2666666666666593
+DataValue, -2.5, 6.0076, 1.2500000000000018
+DataValue, -2.44, 6.0896000000000008, 1.3533333333333386
+DataValue, -2.38, 6.1700000000000008, 1.2933333333333303
+DataValue, -2.32, 6.2448000000000006, 1.259999999999998
+DataValue, -2.2600000000000002, 6.3212, 1.2633333333333383
+DataValue, -2.2, 6.3964000000000008, 1.2633333333333336
+DataValue, -2.14, 6.4728, 1.2033333333333329
+DataValue, -2.08, 6.5408000000000008, 1.1466666666666652
+DataValue, -2.02, 6.6104, 1.1366666666666663
+DataValue, -1.96, 6.6772000000000009, 1.1200000000000037
+DataValue, -1.9000000000000001, 6.7448000000000006, 1.0999999999999983
+DataValue, -1.84, 6.8092000000000006, 1.0666666666666667
+DataValue, -1.78, 6.8728000000000007, 1.0600000000000007
+DataValue, -1.72, 6.9364000000000008, 1.0166666666666666
+DataValue, -1.6600000000000001, 6.9948000000000006, 1.0100000000000007
+DataValue, -1.6, 7.0576000000000008, 1.0233333333333308
+DataValue, -1.54, 7.1176, 0.969999999999996
+DataValue, -1.48, 7.174, 0.89666666666667072
+DataValue, -1.42, 7.225200000000001, 0.90333333333333832
+DataValue, -1.36, 7.2824000000000009, 0.889999999999999
+DataValue, -1.3, 7.3320000000000007, 0.79666666666666708
+DataValue, -1.24, 7.378000000000001, 0.72666666666666746
+DataValue, -1.18, 7.4192000000000009, 0.73666666666666769
+DataValue, -1.12, 7.466400000000001, 0.75666666666666549
+DataValue, -1.06, 7.5100000000000007, 0.70333333333332926
+DataValue, -1, 7.5508000000000006, 0.68999999999999806
+DataValue, -0.94000000000000006, 7.5928, 0.67666666666666619
+DataValue, -0.88, 7.6320000000000006, 0.59666666666666757
+DataValue, -0.82000000000000006, 7.6644000000000005, 0.57000000000000384
+DataValue, -0.76, 7.700400000000001, 0.54999999999999871
+DataValue, -0.70000000000000007, 7.7304, 0.49999999999999678
+DataValue, -0.64, 7.7604000000000006, 0.48333333333333151
+DataValue, -0.58, 7.7884, 0.44333333333333635
+DataValue, -0.52, 7.813600000000001, 0.43333333333333762
+DataValue, -0.46, 7.8404000000000007, 0.39333333333332704
+DataValue, -0.4, 7.8608, 0.31000000000000288
+DataValue, -0.34, 7.877600000000001, 0.300000000000004
+DataValue, -0.28, 7.8968000000000007, 0.27666666666666573
+DataValue, -0.22, 7.9108000000000009, 0.22333333333333089
+DataValue, -0.16, 7.9236, 0.22333333333333094
+DataValue, -0.1, 7.9376000000000007, 0.18333333333333535
+DataValue, -0.04, 7.9456000000000007, 0.15666666666666421
+DataValue, 0.02, 7.9564, 0.14333333333333237
+DataValue, 0.08, 7.9628000000000005, 0.10333333333333675
+DataValue, 0.14, 7.9688000000000008, 0.10000000000000378
+DataValue, 0.2, 7.974800000000001, 0.083333333333331566
+DataValue, 0.26, 7.9788000000000006, 0.066666666666666735
+DataValue, 0.32, 7.982800000000001, 0.060000000000000796
+DataValue, 0.38, 7.9860000000000007, 0.046666666666661527
+DataValue, 0.44, 7.9884, 0.033333333333329662
+DataValue, 0.5, 7.99, 0.02666666666667112
+DataValue, 0.56, 7.9916000000000009, 0.023333333333338167
+DataValue, 0.62, 7.9928000000000008, 0.019999999999997797
+DataValue, 0.68, 7.9940000000000007, 0.019999999999997797
+DataValue, 0.74, 7.9952000000000005, 0.016666666666664831
+DataValue, 0.8, 7.996, 0.0099999999999988987
+DataValue, 0.86, 7.9964, 0.0066666666666659324
+DataValue, 0.92, 7.9968, 0.0066666666666659324
+DataValue, 0.98, 7.9972, 0.0066666666666659324
+DataValue, 1.04, 7.9976, 0.0033333333333329632
+DataValue, 1.1, 7.9976, 0.0066666666666733406
+DataValue, 1.16, 7.9984000000000011, 0.0033333333333329693
+DataValue, 1.22, 7.998, -0.0066666666666733284
+DataValue, 1.28, 7.9976, -0.0033333333333329632
+DataValue, 1.34, 7.9976, 0.0033333333333329632
+DataValue, 1.4000000000000001, 7.998, 0.0066666666666733406
+DataValue, 1.46, 7.9984000000000011, 0.0033333333333403709
+DataValue, 1.52, 7.9984000000000011, 0
+DataValue, 1.58, 7.9984000000000011, 0
+DataValue, 1.6400000000000001, 7.9984000000000011, 0
+DataValue, 1.7, 7.9984000000000011, 0
+DataValue, 1.76, 7.9984000000000011, 0
+DataValue, 1.82, 7.9984000000000011, 0
+DataValue, 1.8800000000000001, 7.9984000000000011, 0
+DataValue, 1.94, 7.9984000000000011, -0.0033333333333403709
+DataValue, 2, 7.998, -0.00666666666668073

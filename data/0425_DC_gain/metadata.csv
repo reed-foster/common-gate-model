@@ -1,0 +1,6 @@
+﻿TestParameter, Channel.VName, VDD, VIN, VB1, VOUT, VB2
+TestParameter, Measurement.Bias.Source, 8, -8, -12, 0, 8
+TestParameter, Measurement.Bias.Source, 8, -8, -12, 0, 6
+TestParameter, Measurement.Bias.Source, 8, -8, -12, 0, 4
+TestParameter, Measurement.Bias.Source, 8, -8, -12, 0, 2
+TestParameter, Measurement.Bias.Source, 8, -8, -12, 0, 0
